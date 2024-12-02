@@ -32,13 +32,13 @@ boxes.forEach((box)=>{
 });
 
 const resetgame=()=>{
- 
+ turnO=true;
     enable_all();
     msgContainer.classList.add("hide");
 };
 
 const enable_all=()=>{
-    turnO=true;
+turnO=true;
     for (let i=0;i<9;i++){
         boxes[i].disabled=false;
         boxes[i].innerText="";
